@@ -320,6 +320,7 @@ local references = function(opts)
     separator = ' ',
     items = {
       { remaining = true },
+      { width = 6 },
     },
   })
 
@@ -329,6 +330,7 @@ local references = function(opts)
 
     return displayer({
       filename,
+      line_info,
     })
   end
 
